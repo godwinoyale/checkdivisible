@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Task3</title>
+</head>
+<body>
+    <script>
+    function myDivisible(number) {
+        let arr = []
+        for (let number =1; arr.length < 100; number++){
+            if(number % 2 === 0 && number % 3 === 0 && number % 5 === 0 ){
+                arr.push('yu-gi-oh')
+            }else if(number % 2 === 0 && number % 3 === 0){
+                arr.push('yu-gi')
+            }else if(number % 2 === 0 && number % 5 === 0){
+                arr.push('yu-oh')
+            }else if(number % 3 === 0 && number % 5 === 0) {
+                arr.push('gi-oh')
+            }else if(number % 2 === 0) {
+                arr.push('yu')
+            }else if(number % 3 === 0 ){
+                arr.push('gi')
+            }else if(number % 5 === 0){
+                arr.push('oh')
+            }else{
+                arr.push(number)
+            }
+        }
+        return arr 
+    }
+    console.log(myDivisible(100))
+    </script>
+</body>
+</html>
